@@ -1,120 +1,109 @@
 <template>
-  <nav class="navbar">
+<nav class="navbar">
     <div class="navbar-container">
-      <div class="logo">
-        <router-link to="/">
-          <img :src="logo" alt="Logo" class="logo-image" />
-          <!-- <img :src="escrita" alt="escrita" class="logo-image" /> -->
-        </router-link>
-      </div>
-      <ul class="nav-links">
-        <li>
-          <router-link to="/">Home</router-link>
-        </li>
-      </ul>
-      <div class="hamburger" @click="toggleMenu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
+        <div class="logo">
+            <router-link to="/">
+                <img :src="logo" alt="Logo" class="logo-image" />
+            </router-link>
+        </div>
+        <ul class="nav-opcoes">
+            <li>
+                <router-link to="/">Home</router-link>
+            </li>
+            <li>
+                <router-link to="/evento">Eventos</router-link>
+            </li>
+        </ul>
     </div>
-  </nav>
+</nav>
 </template>
 
 <script>
-import logoImage from '@/assets/logo.png'; 
-// import escritaLogo from '@/assets/escrita.png'; 
+import logoImage from '@/assets/logo.png';
 
 export default {
-  data() {
-    return {
-      showMenu: false,
-      logo: logoImage,
-      // escrita: escritaLogo
-    };
-  },
-  methods: {
-    toggleMenu() {
-      this.showMenu = !this.showMenu;
+    data() {
+        return {
+            showMenu: false,
+            logo: logoImage,
+        };
     },
-    closeMenu() {
-      this.showMenu = false;
+    methods: {
+        toggleMenu() {
+            this.showMenu = !this.showMenu;
+        },
+        closeMenu() {
+            this.showMenu = false;
+        },
     },
-  },
 };
 </script>
 
 <style scoped>
 .navbar {
-  background-color: #fab920;
-  padding: 1rem;
-  color: #fff;
+    background-color: #fab920;
+    padding: 0.5rem;
+    color: #fff;
 }
 
 .navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    flex-shrink: 0;
 }
 
 .logo-image {
-  height: 120px;         
-  margin-right: 10px;
+    height: 120px;
+    margin-left: 20px;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
+.nav-opcoes {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    flex-grow: 1;
+    justify-content: center;
 }
 
-.nav-links li {
-  margin: 0 1rem;
+.nav-opcoes li {
+    margin: 0 2rem;
 }
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
+.nav-opcoes a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
-.hamburger .bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px;
+.nav-opcoes a:hover {
+    text-decoration: underline;
 }
 
 .mobile-nav {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .mobile-nav li {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 .mobile-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
 }
 
 @media screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
+    .nav-opcoes {
+        display: none;
+    }
 
-  .hamburger {
-    display: block;
-  }
 }
 </style>
