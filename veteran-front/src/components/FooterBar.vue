@@ -1,5 +1,5 @@
 <template>
-<nav class="footer-nav">
+<nav class="footer-bar">
     <div class="footer-container">
         <div class="social-links">
             <!-- Facebook -->
@@ -25,7 +25,7 @@ import logoInsta from '@/assets/instagram-logo.png';
 import logoWhats from '@/assets/whatsapp-logo.png'
 
 export default {
-    name: 'FooterNav',
+    name: 'FooterBar',
     data() {
         return {
             logoFacebook,
@@ -37,7 +37,7 @@ export default {
 </script>  
 
 <style scoped>
-.footer-nav {
+.footer-bar {
     background-color: #fab920;
     padding: 2rem;
     color: #fff;
