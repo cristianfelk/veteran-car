@@ -44,6 +44,12 @@ export default {
     background-color: #fab920;
     padding: 0.5rem;
     color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container {
@@ -51,6 +57,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0 20px;
 }
 
 .logo {
@@ -78,7 +85,7 @@ export default {
     color: #000000;
     text-decoration: none;
     font-size: 2rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav-opcoes a:hover {
@@ -104,6 +111,5 @@ export default {
     .nav-opcoes {
         display: none;
     }
-
 }
 </style>

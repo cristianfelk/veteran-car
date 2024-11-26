@@ -24,7 +24,7 @@ export default defineComponent({
 <style scoped>
 .home-sup{
   background-color: bisque;
-  padding: 10%;
+  padding: 30%;
   width: 20px;
 }
 
