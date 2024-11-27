@@ -1,115 +1,97 @@
 <template>
-<nav class="navbar">
-    <div class="navbar-container">
-        <div class="logo">
-            <router-link to="/">
-                <img :src="logo" alt="Logo" class="logo-image" />
-            </router-link>
-        </div>
+    <nav class="navbar">
+      <div class="navbar-container">
         <ul class="nav-opcoes">
-            <li>
-                <router-link to="/">Home</router-link>
-            </li>
-            <li>
-                <router-link to="/evento">Eventos</router-link>
-            </li>
+          <li>
+            <router-link to="/">Home</router-link>
+          </li>
+  
+          <li class="logo">
+            <router-link to="/">
+              <img :src="logo" alt="Logo" class="logo-image" />
+            </router-link>
+          </li>
+  
+          <li>
+            <router-link to="/evento">Eventos</router-link>
+          </li>
         </ul>
-    </div>
-</nav>
-</template>
-
-<script>
-import logoImage from '@/assets/logo.png';
-
-export default {
+      </div>
+    </nav>
+  </template>
+  
+  <script>
+  import logoImage from '@/assets/logo.png';
+  
+  export default {
     data() {
-        return {
-            showMenu: false,
-            logo: logoImage,
-        };
+      return {
+        logo: logoImage,
+      };
     },
-    methods: {
-        toggleMenu() {
-            this.showMenu = !this.showMenu;
-        },
-        closeMenu() {
-            this.showMenu = false;
-        },
-    },
-};
-</script>
-
-<style scoped>
-.navbar {
-    background-color: #fab920;
+  };
+  </script>
+  
+  <style scoped>
+  .navbar {
+    background-image: url('@/assets/fundo-navbar.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
     padding: 0.5rem;
     color: #fff;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 85px; 
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-container {
+  }
+  
+  .navbar-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 20px;
-}
-
-.logo {
-    flex-shrink: 0;
-}
-
-.logo-image {
-    height: 120px;
-    margin-left: 20px;
-}
-
-.nav-opcoes {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-    flex-grow: 1;
     justify-content: center;
-}
-
-.nav-opcoes li {
-    margin: 0 2rem;
-}
-
-.nav-opcoes a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.nav-opcoes a:hover {
-    text-decoration: underline;
-}
-
-.mobile-nav {
+    align-items: center;
+    height: 100%;
+  }
+  
+  .nav-opcoes {
+    display: flex;
+    align-items: center;
     list-style: none;
     padding: 0;
-}
-
-.mobile-nav li {
-    margin: 1rem 0;
-}
-
-.mobile-nav a {
-    color: white;
+    margin: 0;
+  }
+  
+  .nav-opcoes li {
+    margin: 0 1.5rem; 
+  }
+  
+  .nav-opcoes li.logo {
+    margin: 0 1.5rem; 
+  }
+  
+  .logo-image {
+    margin-top: 130px;
+    height: 200px; 
+  }
+  
+  .nav-opcoes a {
+    color: #000000;
     text-decoration: none;
-    font-size: 1.1rem;
-}
-
-@media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .nav-opcoes a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 768px) {
     .nav-opcoes {
-        display: none;
+      display: none;
     }
-}
-</style>
+  }
+  </style>
+  

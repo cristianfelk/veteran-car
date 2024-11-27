@@ -1,8 +1,6 @@
 <template>
   <NavBar />
-  <div class="home-sup">
-    <p>Ola</p>
-  </div>
+
   <FooterBar />
 </template>
 

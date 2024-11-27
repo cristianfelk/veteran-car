@@ -22,7 +22,8 @@
 <script>
 import logoFacebook from '@/assets/facebook-logo.png';
 import logoInsta from '@/assets/instagram-logo.png';
-import logoWhats from '@/assets/whatsapp-logo.png'
+import logoWhats from '@/assets/whatsapp-logo.png';
+import background from '@/assets/fundo-navbar.png'
 
 export default {
     name: 'FooterBar',
@@ -30,7 +31,8 @@ export default {
         return {
             logoFacebook,
             logoInsta,
-            logoWhats
+            logoWhats,
+            background
         };
     }
 };
@@ -38,13 +40,20 @@ export default {
 
 <style scoped>
 .footer-bar {
-    background-color: #fab920;
-    padding: 2rem;
+    background-image: url('@/assets/fundo-navbar.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 1rem;
     color: #fff;
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: auto; 
+    min-height: 80px;
+    left: 0; 
 }
+
 
 .footer-container {
     display: flex;
