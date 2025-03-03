@@ -34,7 +34,7 @@
   
   <style scoped>
   .navbar {
-    background-image: url('@/assets/fundo-navbar.png');
+    background-color: rgb(255, 189, 35);
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;

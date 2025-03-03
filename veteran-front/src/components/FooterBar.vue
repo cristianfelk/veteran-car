@@ -40,7 +40,7 @@ export default {
 
 <style scoped>
 .footer-bar {
-    background-image: url('@/assets/fundo-navbar.png');
+    background-color: rgb(240, 168, 1);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
