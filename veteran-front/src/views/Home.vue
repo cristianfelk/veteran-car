@@ -1,7 +1,38 @@
 <template>
   <NavBar />
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
+    <p>TESTE</p>
 
-  <FooterBar />
+    <p>TESTE</p>
+<FooterBar />
 </template>
 
 <script>
