@@ -23,17 +23,11 @@
                 </li>
                 <li>
                     <img :src="telefone" class="location-icon">
-                    <strong>Fone:</strong> +55 49 8859-7933</li>
+                    <strong>Fone:</strong> +55 49 8816-6465</li>
                 <li>
                     <img :src="whats" class="location-icon">
-                    <a href="https://wa.me/554988597933" target="_blank"><strong>Celular/Whatsapp:</strong> +55 49 8859-7933</a></li>
+                    <a href="https://wa.me/554988166465" target="_blank"><strong>Celular/Whatsapp:</strong> +55 49 8816-6465</a></li>
             </ul>
-        </div>
-
-        <!-- Coluna Seja Sócio -->
-        <div class="footer-column">
-            <h3>SEJA SÓCIO!</h3>
-            <img src="@/assets/carro.jpg" alt="Seja Sócio" class="footer-image">
         </div>
 
         <!-- Coluna Últimas Notícias e Classificados -->
