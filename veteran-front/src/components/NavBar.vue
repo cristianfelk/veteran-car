@@ -5,9 +5,10 @@
         <li>
           <router-link to="/" exact-active-class="active">Início</router-link>
         </li>
-        <!-- <li>
-          <router-link to="/" exact-active-class="active">Institucional</router-link>
-        </li> -->
+
+        <li>
+          <router-link to="/institucional" exact-active-class="active">Institucional</router-link>
+        </li>
 
         <li class="logo">
           <router-link to="/">
@@ -16,7 +17,11 @@
         </li>
 
         <li>
-          <router-link to="/veteranEvent" exact-active-class="active">Eventos</router-link>
+          <router-link to="/eventos" exact-active-class="active">Eventos</router-link>
+        </li>
+
+        <li>
+          <router-link to="/patrocinadores" exact-active-class="active">Patrocinadores</router-link>
         </li>
       </ul>
     </div>

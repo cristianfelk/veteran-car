@@ -8,14 +8,29 @@ const routes = [
     component: Home
   },
   {
-    path: '/veteranEvent',
+    path: '/eventos',
     name: 'veteranEvent',
     component: () => import('@/views/veteranEvent.vue'),
   },
   {
-  path: '/veteranPresenca',
-    name: 'veteranPresenca',
-    component: () => import('@/views/veteranPresenca.vue'),
+    path: '/institucional',
+    name: 'veteranInstitucional',
+    component: () => import('@/views/veteranInstitucional.vue'),
+  },
+  {
+    path: '/patrocinadores',
+    name: 'veteranPatrocinadores',
+    component: () => import('@/views/veteranPatrocinadores.vue'),
+  },
+  {
+    path: '/dashboard',
+    name: 'veteranDashboard',
+    component: () => import('@/views/veteranDashboard.vue'),
+  },
+  {
+  path: '/login',
+    name: 'veteranLogin',
+    component: () => import('@/views/veteranLogin.vue'),
   }
 ]
 

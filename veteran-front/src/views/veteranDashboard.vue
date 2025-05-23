@@ -1,5 +1,5 @@
 <template>
-    <NavBar />
+    <NavBarAdm />
     
     <br>
     <br>
@@ -16,15 +16,13 @@
     import {
         defineComponent
     } from 'vue';
-    import NavBar from '../components/NavBar.vue';
-    import FooterBar from '../components/FooterBar.vue';
+    import NavBarAdm from '../components/NavBarAdm.vue';
     
     export default defineComponent({
         name: 'HomeView',
     
         components: {
-            NavBar,
-            FooterBar,
+            NavBarAdm,
         },
     });
     </script>
