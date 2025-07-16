@@ -1,10 +1,13 @@
 const express = require('express');
-
 const app = express();
-const port = 3000;
+app.use(express.json());
 
-app.get('/', (req, res) => {res.send('teste'); });
+require('./routes')(app);
 
-app.listen(port, () => {
-    console.log(`App rodando ${port}`)
-})
+app.get('/', (req, res) => {
+    res.send('Executando aplicativo!');
+});
+
+app.listen(3000, () => {
+    console.log(`Aplicativo rodando na porta ${3000}`);
+});
